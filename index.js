@@ -1,11 +1,10 @@
-// Seleccionar elementos del DOM
+
 const mainContainer = document.getElementById("main-container");
 const message = document.getElementById("message");
 const gif = document.getElementById("gif");
 const btnYes = document.getElementById("btn-yes");
 const btnNo = document.getElementById("btn-no");
 
-// Lista de mensajes para cuando el usuario presiona "No"
 const messages = [
     "¿Segura? ¡Piénsalo bien!",
     "Vamos, ¡di que sí!",
@@ -50,29 +49,23 @@ function updateContent() {
     attempt++;
 }
 
-
 function launchConfetti() {
-    
-    
-   
     confetti({
         particleCount: 100,
-        angle: 60, 
-        spread: 60,
-        origin: { x: 0, y: 0.7 } 
+        angle: 60,
+        spread: 55,
+        origin: { x: 0, y: 0.7 }
     });
 
     confetti({
         particleCount: 100,
-        angle: 120, 
-        spread: 60,
-        origin: { x: 1, y: 0.7 } 
+        angle: 120,
+        spread: 55,
+        origin: { x: 1, y: 0.7 }
     });
 
-    
-    setTimeout(launchConfetti, 1000);
+    setTimeout(launchConfetti, 900);
 }
-
 btnYes.addEventListener("click", () => {
 
     mainContainer.innerHTML = `
@@ -86,6 +79,11 @@ btnYes.addEventListener("click", () => {
     `;
 
     launchConfetti();
+});
+
+
+btnNo.addEventListener("click", () => {
+    updateContent(); 
 });
 
 
