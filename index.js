@@ -85,8 +85,3 @@ btnYes.addEventListener("click", () => {
 btnNo.addEventListener("click", () => {
     updateContent(); 
 });
-
-
-btnNo.addEventListener("click", () => {
-    updateContent(); 
-});
