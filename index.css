@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("imagenes/Fondo.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.gif-container {
+    margin: 20px 0; 
+    text-align: center; 
+}
+
+.gif-container img {
+    width: auto; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 30px 50px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.yes {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.btn.yes:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+.btn.no {
+    background-color: #f44336; 
+    color: white;
+}
+
+.btn.no:hover {
+    background-color: #d32f2f; 
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
