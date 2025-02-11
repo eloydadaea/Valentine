@@ -1,3 +1,4 @@
+
 body, html {
     margin: 0;
     padding: 0;
@@ -10,7 +11,8 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url("imagenes/Fondo.jpg"); 
+    background-color: #f8a8a8;
+    background-image: url("imagenes/Fondo.webp"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,25 +24,18 @@ body, html {
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 10px;
+    width: 90%; 
+    max-width: 800px; 
 }
 
 h1 {
-    font-size: 2.5rem;
-}
-
-p {
-    font-size: 1.2rem;
-}
-
-.gif-container {
-    margin: 20px 0; 
-    text-align: center; 
+    font-size: 2.5rem; 
 }
 
 .gif-container img {
-    width: auto; 
+    max-width: 100%; 
     height: auto;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .buttons {
@@ -48,12 +43,12 @@ p {
 }
 
 .btn {
-    padding: 30px 50px;
-    font-size: 2rem;
+    padding: 20px 40px; 
+    font-size: 1.5rem; 
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin: 15px;
+    margin: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -77,22 +72,34 @@ p {
     transform: scale(1.05); 
 }
 
+
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2rem; 
     }
 
-    p {
-        font-size: 1rem;
+    .btn {
+        padding: 15px 30px; 
+        font-size: 1.2rem; 
+    }
+
+    .content {
+        padding: 15px; 
     }
 }
 
+
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
     }
 
-    p {
-        font-size: 0.9rem;
+    .btn {
+        padding: 10px 20px; 
+        font-size: 1rem; 
+    }
+
+    .content {
+        padding: 10px;
     }
 }
